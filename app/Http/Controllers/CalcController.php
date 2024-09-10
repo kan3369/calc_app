@@ -36,7 +36,6 @@ class CalcController extends Controller
         }
 
         // 計算結果をビューに渡す
-        $message = $result;
-        return view('result', ['message' => $message]);
+        return view('result',['result' => $result]);
     }
 }
